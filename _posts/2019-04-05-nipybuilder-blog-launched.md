@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "NiPy Builder Blog Launched"
 date: 2019-04-05
 ---

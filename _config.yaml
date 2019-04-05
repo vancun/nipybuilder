@@ -2,5 +2,7 @@ name: NiPy Builder
 title: NiPy Builder
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-theme: minima
+theme: jekyll-theme-dinky
+#theme: minima
+show_downloads: false
 
