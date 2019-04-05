@@ -41,6 +41,7 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/minima-2.5.0
 ## References
 
 * [Jekyll Themes](https://jekyllrb.com/docs/themes/)
+* [Adding a Jekyll theme to your GitHub Pages site](https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site)
 
 
 
