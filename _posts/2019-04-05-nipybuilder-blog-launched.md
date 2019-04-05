@@ -4,57 +4,65 @@ title: "NiPy Builder Blog Launched"
 date: 2019-04-05
 ---
 
-> [NiPyBuilder site](https://vancun.github.io/nipybuilder) was launched. The site is hosted by [GitHub Pages](https://pages.github.com/) with [Jekyll](https://jekyllrb.com/). Site includes also [NiPyBuilder Blog](https://vancun.github.io/nipybuilder/blog/). 
->
-> ## Setting Up Jekyll Locally
->
-> ### Step 1: Install Ruby
->
-> (Based on <https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll>)
->
-> 1. [Install Ruby](https://www.ruby-lang.org/en/downloads/)
->
-> 2. Install Bundler:
->
->    ```bash
->    $ gem install bundler
->    # Installs the Bundler gem
->    ```
->
-> Step 2: Prepare Pages Directory
->
-> 1. Initialize git repository 
->
->    ```bash
->    $ git init nipybuilder-pages
->    #> git creates folder nipybuilder-pages
->    
->    $ cd nipybuilder-pages
->    
->    # Connect local repository to the remote github repository
->    $ git remote add origin https://github.com/vancun/nipybuilder
->    
->    # Create GitHub Pages branch
->    $ git checkout -b gh-pages
->    
->    # Pull remote repository
->    $ git pull
->    ```
->
-> 2. Create `.gitignore` file with following content:
->
->    ```
->    _site
->    Gemfile.lock
->    ```
->
-> 3. Commit and push:
->
->    ```bash
->    $ git add .
->    $ git commit -m "Repository initialized."
->    $ git push origin -u gh-pages
->    ```
+ [NiPyBuilder site](\https://vancun.github.io/nipybuilder) was launched. The site is hosted by [GitHub Pages](https://pages.github.com/) with [Jekyll](https://jekyllrb.com/). Site includes also [NiPyBuilder Blog](https://vancun.github.io/nipybuilder/blog/). 
+
+ GitHub Pages could be built from following sources:
+
+ * `gh-pages` branch
+ * `master` branch
+ * `master` branch `/docs` folder
+
+ [NiPyBuilder](https://vancun.github.io/nipybuilder) site uses the `gh-pages` branch as source for the GitHub pages.
+
+ ## Setting Up Jekyll Locally
+
+ ### Step 1: Install Ruby
+
+ (Based on <https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll)
+
+ 1. [Install Ruby](https://www.ruby-lang.org/en/downloads/)
+
+ 2. Install Bundler:
+
+ ```bash
+ $ gem install bundler
+ # Installs the Bundler gem
+ ```
+
+ Step 2: Prepare Pages Directory
+
+ 1. Initialize git repository 
+
+ ```bash
+ $ git init nipybuilder-pages
+ # git creates folder nipybuilder-pages
+ 
+ $ cd nipybuilder-pages
+ 
+ # Connect local repository to the remote github repository
+ $ git remote add origin https://github.com/vancun/nipybuilder
+ 
+ # Create GitHub Pages branch
+ $ git checkout -b gh-pages
+ 
+ # Pull remote repository
+ $ git pull
+ ```
+
+ 2. Create `.gitignore` file with following content:
+
+ ```
+ _site
+ Gemfile.lock
+ ```
+
+ 3. Commit and push:
+
+ ```bash
+ $ git add .
+ $ git commit -m "Repository initialized."
+ $ git push origin -u gh-pages
+ ```
 
 ### Step 3: Prepare Jekyll
 
@@ -74,7 +82,7 @@ date: 2019-04-05
 
 ### Step 4. Create Site Templates
 
-(based on <http://jmcglone.com/guides/github-pages/>)
+(based on <http://jmcglone.com/guides/github-pages/)
 
 1. Create file `_config.yaml`
 
@@ -121,7 +129,7 @@ $ git push -u origin
 1. Links should use `relative_url` filter. E.g.:
 
    ```html
-   <link rel="stylesheet" type="text/css" href="{{ '/css/main.css'  | relative_url }}">
+   <link rel="stylesheet" type="text/css" href="{{ '/css/main.css'  | relative_url }}"
    ```
 
 2. Jekyll server should be started with `--baseurl` option:
@@ -133,6 +141,7 @@ $ git push -u origin
 ## Resources
 
 * [GitHub Pages](https://pages.github.com/)
+* [Configuring a Publishing Source for GitHub Pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages)
 * [Jekyll](https://jekyllrb.com/)
 * [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)
 
